@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Facebook } from "lucide-react";
+import Link from "next/link";
 
 export default function ConnectPage() {
   return (
@@ -25,8 +26,10 @@ export default function ConnectPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button className="w-full">
-            Connect to Facebook
+          <Button className="w-full" asChild>
+            <Link href="/api/auth/facebook">
+                Connect to Facebook
+            </Link>
           </Button>
         </CardContent>
       </Card>
