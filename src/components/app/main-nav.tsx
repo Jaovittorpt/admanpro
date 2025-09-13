@@ -25,7 +25,7 @@ export function MainNav() {
       icon: Users,
     },
     {
-      href: '#',
+      href: '/connect',
       label: 'Connect Account',
       icon: Link,
     }
